@@ -1,0 +1,10 @@
+
+[Unit]
+Description=Bash Systemd Scheduler(BSS) scheduler
+
+[Service]
+Type=oneshot
+ExecStart=USER_HOME_DIRECTORY/bss/scheduler.sh
+
+[Install]
+WantedBy=default.target

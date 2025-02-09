@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Runs BSS Scheduler for backup jobs
+Requires=bss.service
+
+[Timer]
+Unit=bss.service
+OnBootSec=1min
+OnCalendar=hourly
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,17 @@
+---
+jobs:
+
+  - name: testjob
+    parameters:
+      command: "ls -la /tmp"
+      frequency: daily
+
+  - name: testjob2
+    parameters:
+      command: "cd /tmp/test; git pull"
+      frequency: 6 hours
+
+  - name: testjob3
+    parameters:
+      command: "rclone copy /tmp/test s3:test/test1 --update --progress"
+      frequency: hourly
