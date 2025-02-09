@@ -1,5 +1,14 @@
 ## YAML Configuration File Documentation
 
+## Configuration File Parameters and Options
+| Parameter | Default Value | Required? | Description |
+|-|-|-|-|
+| name | NONE | YES | Unique name of job |
+| parameters |-|-| Specifications for job |
+| parameters.command |-| YES | FUll Command |
+| parameters.frequency | `daily` | NO |  Frequency to run backup job. See [Systemd Time](SystemdTime.md) for details on Valid DateTime Formats |
+
+
 ## Configuration Example
 ```yaml
 jobs:
@@ -23,11 +32,3 @@ jobs:
       modified: Thu May 23 03:47:26 AM EDT 2024
       timer: run-recefe7ab7126451db1903a9c60e1a1f4.timer
 ```
-
-## Configuration File Parameters and Options
-| Parameter | Default Value | Required? | Description |
-|-|-|-|-|
-| name | NONE | YES | Unique name of job |
-| parameters |-|-| Specifications for job |
-| parameters.command |-| YES | FUll Command |
-| parameters.frequency | `daily` | NO |  Frequency to run backup job. See [Systemd Time](SystemdTime.md) for details on Valid DateTime Formats |

@@ -1,5 +1,7 @@
 # Files 
 
+This is a description of the files under the Source folder
+
 ## scheduler.sh
 
 The Scheduler is run by bss.service to validate the configuration file, and then create or modify any existing timers.
@@ -14,8 +16,14 @@ These files are templates that are modified during install
 
 ## bss.service
 
-This installs a USER systemd service at ??????
+This installs a USER systemd service at `$HOME/.config/systemd/user`. 
+The name is changed to `bss-USERID.service`.
+
+This installs the bss service which runs the Scheduler once it is triggered.
 
 ## bss.timer
 
-This installs a USER systemd service timer at ??????
+This installs a USER systemd service timer at `$HOME/.config/systemd/user`. 
+The name is changed to `bss-USERID.timer`.
+
+This trigger runs hourly, allowing brb to check or modify jobs as needed

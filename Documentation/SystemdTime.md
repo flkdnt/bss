@@ -87,7 +87,7 @@ You can use `systemd-analyze calendar "EVENT"` to validate calendar events, but 
 |Every 6 months|`* *-01,07-01 00:00:00`|
 |Every year|`* *-01-01 00:00:00`|
 
-### Calendar Event Examples from the Manual
+### Calendar Event Examples from the Man Page
 
 | Example | Normalized Form |
 | - | - |
